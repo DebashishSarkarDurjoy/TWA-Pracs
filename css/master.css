@@ -1,0 +1,270 @@
+body {
+    background: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+    font-family: inherit;
+}
+
+h1, h2 {
+    font-family: Quicksand;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 180%;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    color: inherit;
+    margin-bottom: 2px;
+}
+
+h3 {
+    font-size: 160%;
+    color: #2b6777;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 140%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+a {
+    font-style: italic;
+    color: black;
+}
+
+a[href^="http"] {
+    text-decoration-line: line;
+    text-decoration-style: double;
+    text-decoration-color: #2b6777;
+}
+
+a[href^="http"]:hover {
+    color: #52ab98;
+    font-style: normal;
+}
+
+ul > li {
+    line-height: 2;
+}
+
+p {
+    line-height: 1.5;
+    margin-top: 4px;
+}
+
+/* Grid System CSS */
+.item {
+    padding: 10px;
+}
+
+
+#navigation {
+    grid-area: nav;
+}
+
+#left {
+    grid-area: leftColumn;
+    width: 300px;
+}
+
+#main {
+    grid-area: mainColumn;
+    width: auto;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+
+.grid-container {
+    justify-content: center;
+    background-color: white;
+    display: grid;
+    max-width: 1440px;
+    grid-gap: 10px;
+    grid-template: "nav nav"
+                   "leftColumn mainColumn"
+                   "footer footer";
+
+}
+/* Grid System CSS */
+
+/* top row */
+#navigation {
+    background-color: white;
+    border-bottom: 2px solid #2b6777;
+    padding-bottom: 15px;
+    color: #2b6777;
+}
+
+#navigation h1 {
+    text-transform: uppercase;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    background-color: #2b6777;
+    color: white;
+    padding-top: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+
+}
+
+nav {
+    float: left;
+}
+
+#navigation h2 {
+    float: right;
+}
+
+#navigation ul > li {
+    display: inline;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#navigation a {
+    background-color: inherit;
+    color: inherit;
+    padding: 8px 8px 8px 8px;
+}
+
+#navigation a:hover {
+    background-color: #52ab98;
+    color: white;
+    border-radius: 5px;
+}
+/* top row */
+
+
+/* main row */
+#main a {
+    background-color: inherit;
+    color: inherit;
+    padding: 5px 5px 5px 5px;
+}
+
+#main a:hover {
+    background-color: #52ab98;
+    color: white;
+    border-radius: 5px;
+}
+
+#main img {
+    float: left;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+#main figure {
+    margin: auto;
+    float: left;
+}
+
+#main figcaption {
+    font-style: italic;
+    padding-bottom: 15px;
+    color: #52ab98;
+}
+
+#main h4, p, figure, ul, img {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+#main ul {
+    padding-left: 95px;
+}
+
+.video {
+    padding-left: 50px;
+}
+
+#colorIndex {
+    background-color: #c8d8e4;
+    padding: 10px 40px 5px 40px;
+    border-radius: 5px;
+}
+
+#colorIndex p {
+    padding-left: 2px;
+}
+/* main row */
+
+
+/* Bottom Row */
+#footer {
+    border-top: 2px solid #2b6777;
+    float: left;
+    color: #2b6777;
+    line-height: 0.5;
+}
+
+#studentDetails {
+    float: right;
+    color: black;
+    font-size: 70%
+}
+
+#copyright {
+    color: inherit;
+    font-size: 80%;
+}
+
+#footer p {
+    line-height: 1;
+}
+/* Bottom Row */
+
+
+/* Left Column */
+#left ul {
+    list-style-type: none;
+}
+
+#left ul > li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 40px;
+}
+
+#left a {
+    background-color: inherit;
+    color: inherit;
+    padding: 8px 8px 8px 8px;
+}
+
+#left a:hover {
+    background-color: #52ab98;
+    color: white;
+    border-radius: 5px;
+}
+/* Left Column */
+
+
+
+/* Right Column */
+#right {
+    background-color: inherit;
+    color: inherit;
+}
+/* Right Column */
