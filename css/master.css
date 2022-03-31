@@ -169,9 +169,14 @@ nav {
 }
 
 #main a:hover {
+    color: #52ab98;
+    border-radius: 5px;
+}
+
+#main a[href="#top"]:hover {
     background-color: #52ab98;
     color: white;
-    border-radius: 5px;
+    font-style: normal;
 }
 
 #main img {
@@ -217,6 +222,10 @@ nav {
 
 
 /* Bottom Row */
+#footer p {
+    line-height: normal;
+}
+
 #footer {
     border-top: 2px solid #2b6777;
     float: left;
